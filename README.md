@@ -1,39 +1,45 @@
-# Personal Website
+# Nihal Gunukula
 
-Personal website for Nihal Gunukula, built for GitHub Pages.
+👋 Hi! I'm **Nihal Gunukula**, a Computer Science student at Purdue University building privacy-preserving ML infrastructure.
 
-## Setup Instructions
+## What I'm Building
 
-1. **Create a GitHub Repository**
-   - Create a new repository named `nihalgunukula.github.io` (or your preferred name)
-   - Make sure it's set to public (required for free GitHub Pages)
+I'm the **Founder & CEO of [Phyvant](https://phyvant.com)**, a privacy-preserving ML platform for regulated industries. We enable enterprises to train models on sensitive data using federated fine-tuning with differential privacy—so companies like hospitals, law firms, and financial institutions can leverage their data without privacy risks.
 
-2. **Upload Files**
-   - Upload all files from this directory to your repository
-   - Make sure `index.html` is in the root directory
+**First customer:** [Cargill](https://www.cargill.com/) (world's largest private company). Active conversations with healthcare systems, law firms, and financial services companies.
 
-3. **Enable GitHub Pages**
-   - Go to your repository on GitHub
-   - Click on **Settings**
-   - Scroll down to **Pages** in the left sidebar
-   - Under **Source**, select the branch (usually `main` or `master`)
-   - Select the folder (usually `/ (root)`)
-   - Click **Save**
+## Experience
 
-4. **Access Your Site**
-   - Your site will be available at `https://nihalgunukula.github.io` (or your repository name)
-   - It may take a few minutes for the site to be published
+- **Founder & CEO** @ [Phyvant](https://phyvant.com) — Building federated learning infrastructure with RLHF, DPO, and differential privacy
+- **ML Engineer** @ [Mercor](https://www.mercor.com/research/) — RLHF systems for model quality at a $10B+ Series C startup
+- **Software Engineer** @ Litewave — Built pharmaceutical document intelligence pipelines with Neo4j, FAISS, and Kubernetes
 
-## Customization
+## Research
 
-- Edit `index.html` to update content
-- Edit `styles.css` to change the design and colors
-- Add your resume PDF file as `Nihal_Gunukula_Resume.pdf` in the root directory
+- **First-author paper** at IROS 2025: [PathCluster: Pedestrian Group-Adaptive Social Navigation in Dense Crowds](https://ras.papercept.net/conferences/conferences/IROS25/program/IROS25_ContentListWeb_2.html)
+- Research with [Professor Aniket Bera](https://www.cs.purdue.edu/homes/ab/) at [IDEAS Lab](https://ideas.cs.purdue.edu/), Purdue
+- [MIRACLE: Inverse Reinforcement Learning](https://arxiv.org/pdf/2312.03651) — arXiv 2023
 
-## Notes
+## Education
 
-- This is a static website (HTML, CSS, JavaScript)
-- No build process required
-- Works directly with GitHub Pages
-- Make sure to add your resume PDF file if you want the resume link to work
+**Purdue University** — BS Computer Science, Minor in Mathematics (Expected May 2027)
+- CS Outstanding Freshman Award (single recipient among 800+ students)
+- 4x Dean's List, 2x Semester Honors
+- Won $45K+ in pitch competitions and hackathons
 
+## Interests
+
+Privacy-preserving ML, federated learning, RLHF (PPO, DPO), distributed systems, and building infrastructure that works under constraints. Long-term, I'm drawn to problems where ML meets high-stakes decisions: healthcare, defense, autonomous systems.
+
+## Get in Touch
+
+- **Email:** nihalgunukula@gmail.com
+- **GitHub:** [github.com/nihalgunu](https://github.com/nihalgunu)
+- **LinkedIn:** [linkedin.com/in/nihalgunu](https://linkedin.com/in/nihalgunu)
+- **Website:** [nihalgunu.github.io/nihalgunukula.github.io](https://nihalgunu.github.io/nihalgunukula.github.io)
+
+If you're working on something interesting, I'd like to hear about it.
+
+---
+
+*This repository contains the source code for my personal website, built with HTML, CSS, and JavaScript and deployed on GitHub Pages.*
