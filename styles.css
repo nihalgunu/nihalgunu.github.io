@@ -8,20 +8,20 @@
     --primary-color: #551a8b;
     --text-color: #000000;
     --text-light: #333333;
-    --bg-color: #faf9f6;
+    --bg-color: #f8f6f0;
     --bg-light: #f5f5f5;
     --border-color: #e5e7eb;
 }
 
 html {
-    background-color: #faf9f6;
+    background-color: #f8f6f0;
 }
 
 body {
     font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.7;
     color: var(--text-color);
-    background-color: #faf9f6;
+    background-color: #f8f6f0;
     font-size: 16px;
     font-weight: 400;
 }
