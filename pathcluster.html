@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#111111">
+    <title>PathCluster — Nihal Gunukula</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="nav-header">
+        <div class="container nav-inner">
+            <a href="index.html" class="nav-brand">Nihal Gunukula</a>
+            <nav class="nav-links" aria-label="Primary">
+                <a href="about.html" class="nav-link">About</a>
+                <a href="https://github.com/nihalgunu" class="nav-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com/in/nihalgunu" class="nav-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article class="container post">
+            <h1 class="post-title">PathCluster</h1>
+            <p class="post-date">2025 — <a href="https://ras.papercept.net/conferences/conferences/IROS25/program/IROS25_ContentListWeb_2.html" target="_blank" rel="noopener noreferrer">IROS 2025</a></p>
+            <div class="post-body">
+                <p>
+                    First-author paper at IROS 2025.
+                </p>
+                <p>
+                    Most robot navigation systems treat people as moving obstacles. Avoid them and you're done. This works in sparse environments. In dense crowds, it breaks down completely.
+                </p>
+                <p>
+                    Humans don't navigate crowds by avoiding individuals. We read the social structure. That group of three walking together — don't split them. That couple stopped to look at something — give them space. That stream of commuters — merge into the flow, don't cut across it.
+                </p>
+                <p>
+                    PathCluster teaches robots to do the same thing. The system identifies pedestrian clusters in real time and plans trajectories that respect group cohesion and social norms. The result is navigation that feels natural instead of robotic — because it accounts for the things humans handle instinctively but never articulate.
+                </p>
+                <p>
+                    The technical approach is reinforcement learning with a group-adaptive reward structure. The agent learns not just collision avoidance but social awareness: when to yield, when to merge, when to wait. The kind of judgment humans don't think about but immediately notice when it's missing.
+                </p>
+                <p>
+                    Work with <a href="https://www.cs.purdue.edu/homes/ab/" target="_blank" rel="noopener noreferrer">Professor Aniket Bera</a> at <a href="https://ideas.cs.purdue.edu/" target="_blank" rel="noopener noreferrer">IDEAS Lab</a>, Purdue.
+                </p>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Nihal Gunukula</p>
+        </div>
+    </footer>
+</body>
+</html>

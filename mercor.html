@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#111111">
+    <title>Mercor — Nihal Gunukula</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="nav-header">
+        <div class="container nav-inner">
+            <a href="index.html" class="nav-brand">Nihal Gunukula</a>
+            <nav class="nav-links" aria-label="Primary">
+                <a href="about.html" class="nav-link">About</a>
+                <a href="https://github.com/nihalgunu" class="nav-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com/in/nihalgunu" class="nav-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article class="container post">
+            <h1 class="post-title">Mercor</h1>
+            <p class="post-date">2025</p>
+            <div class="post-body">
+                <p>
+                    ML Engineer on the <a href="https://www.mercor.com/research/" target="_blank" rel="noopener noreferrer">research team</a> at Mercor, building RLHF systems for model quality.
+                </p>
+                <p>
+                    The problem with RLHF at scale is deceptively simple: you're trying to use human judgment to improve model outputs. But human judgment is noisy, inconsistent, and expensive. Your reward model drifts. Your evaluators disagree. The distribution of tasks you're optimizing for keeps shifting under you.
+                </p>
+                <p>
+                    Most teams focus on the modeling side — PPO vs DPO, reward model architecture, training stability. The real leverage is in the data. Which human judgments do you trust? How do you weight conflicting signals? How do you detect when your reward model is gaming the metric instead of genuinely improving?
+                </p>
+                <p>
+                    That's where I spent most of my time. Building the infrastructure to curate, weight, and validate human feedback at scale. The systems that decide which feedback to learn from and which to ignore.
+                </p>
+                <p>
+                    The lesson that carried forward into everything I've built since: in ML systems, the model is often the easy part. The hard part is the data pipeline that feeds it. Get that wrong and no amount of architectural cleverness saves you.
+                </p>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Nihal Gunukula</p>
+        </div>
+    </footer>
+</body>
+</html>

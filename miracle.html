@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#111111">
+    <title>MIRACLE — Nihal Gunukula</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="nav-header">
+        <div class="container nav-inner">
+            <a href="index.html" class="nav-brand">Nihal Gunukula</a>
+            <nav class="nav-links" aria-label="Primary">
+                <a href="about.html" class="nav-link">About</a>
+                <a href="https://github.com/nihalgunu" class="nav-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com/in/nihalgunu" class="nav-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article class="container post">
+            <h1 class="post-title">MIRACLE</h1>
+            <p class="post-date">2023 — <a href="https://arxiv.org/pdf/2312.03651" target="_blank" rel="noopener noreferrer">arXiv</a></p>
+            <div class="post-body">
+                <p>
+                    How do you teach a robot to navigate like a human?
+                </p>
+                <p>
+                    The standard approach is to hand-engineer a reward function: penalize collisions, reward reaching the goal, add some terms for social comfort. The problem is that human navigation is too nuanced to specify this way. We implicitly optimize for dozens of competing objectives — speed, safety, social norms, energy efficiency, predictability — and the weighting shifts constantly based on context.
+                </p>
+                <p>
+                    MIRACLE takes a different approach: learn the reward function from human demonstration using inverse reinforcement learning. Instead of telling the robot what good navigation looks like, show it. Extract the implicit objectives from real human trajectories.
+                </p>
+                <p>
+                    The curriculum learning component handles the complexity gap. You can't drop a robot into a dense crowd on day one and expect it to learn anything useful. MIRACLE gradually increases environmental complexity — simple scenarios first, harder ones later. The same way humans learn, incidentally.
+                </p>
+                <p>
+                    Work with Kshitij Tiwari and <a href="https://www.cs.purdue.edu/homes/ab/" target="_blank" rel="noopener noreferrer">Professor Aniket Bera</a>.
+                </p>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Nihal Gunukula</p>
+        </div>
+    </footer>
+</body>
+</html>
