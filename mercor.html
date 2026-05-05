@@ -28,7 +28,7 @@
             <p class="post-date">2025</p>
             <div class="post-body">
                 <p>
-                    ML Engineer on the <a href="https://www.mercor.com/research/" target="_blank" rel="noopener noreferrer">research team</a> at Mercor. Three problems consumed most of my time: building RLHF pipelines, replacing humans with LLM judges for QA, and squeezing latency out of LLM inference.
+                    ML Engineer on the <a href="https://www.mercor.com/research/" target="_blank" rel="noopener noreferrer">research team</a> at Mercor. Three problems consumed most of my time: helping build RLHF pipelines, helping replace human-heavy QA with LLM judges, and helping squeeze latency out of LLM inference.
                 </p>
                 <h2>RLHF pipelines</h2>
                 <p>
@@ -38,14 +38,14 @@
                     Most teams focus on the modeling side — PPO vs DPO, reward model architecture, training stability. The real leverage is in the data. Which human judgments do you trust? How do you weight conflicting signals? How do you detect when your reward model is gaming the metric instead of genuinely improving?
                 </p>
                 <p>
-                    I built the infrastructure to curate, weight, and validate human feedback at scale — the systems that decide which feedback to learn from and which to ignore. The model is often the easy part. The hard part is the data pipeline that feeds it.
+                    I helped build infrastructure to curate, weight, and validate human feedback at scale — the systems that decide which feedback to learn from and which to ignore. The model is often the easy part. The hard part is the data pipeline that feeds it.
                 </p>
                 <h2>LLM as a judge</h2>
                 <p>
                     Once the RLHF pipeline was working, the bottleneck moved to QA. Every model iteration needed thousands of human evaluations to know whether it was actually better. That doesn't scale and it doesn't run overnight.
                 </p>
                 <p>
-                    I implemented an LLM-as-a-judge layer to replace most of that work. The hard part isn't writing a rubric and asking a model to score — it's making the judge agree with humans often enough that you can trust it. That meant calibrating against held-out human-labeled sets, controlling for position and verbosity bias, and ensembling across prompts when single-judge variance was too high.
+                    I helped implement an LLM-as-a-judge layer to replace most of that work. The hard part isn't writing a rubric and asking a model to score — it's making the judge agree with humans often enough that you can trust it. That meant calibrating against held-out human-labeled sets, controlling for position and verbosity bias, and ensembling across prompts when single-judge variance was too high.
                 </p>
                 <p>
                     The payoff was a feedback loop that ran in minutes instead of days. Engineers could ship a candidate model, get a quality read by lunch, and iterate the same afternoon.
