@@ -32,8 +32,19 @@
         finished = true;
         root.dataset.intro = 'done';
         // Mobile browsers can leave the page nudged down after a full-screen
-        // overlay; land the reveal at the top.
-        try { window.scrollTo(0, 0); } catch (e) {}
+        // overlay; land the reveal at the top, again once the overlay has
+        // finished fading (iOS settles its viewport late).
+        var toTop = function () {
+            try {
+                root.style.scrollBehavior = 'auto';
+                window.scrollTo(0, 0);
+                root.style.scrollBehavior = '';
+            } catch (e) {}
+        };
+        toTop();
+        var overlay = document.querySelector('.intro');
+        if (overlay) overlay.addEventListener('animationend', toTop, { once: true });
+        setTimeout(toTop, 700);
     }
     if (!frames.length || !stage || !steps.length) return finish();
 
