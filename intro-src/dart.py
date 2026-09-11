@@ -41,9 +41,9 @@ RC = (CX, 50.0)                              # step 6 turns the model about this
 SPINE_Y = RC[1]                              # after the turn the spine lies along this line
 CREASE_Y = SPINE_Y - KEEL                    # near wing crease, parallel to the spine
 FAR_CREASE_Y = CREASE_Y + FAR_DROP           # far wing crease, a little closer to the spine
-VIEW_ELEV = 62.0                             # finale: camera looks down at the dart by this many degrees
-VIEW_AZ = -16.0                              # finale: camera swung this far behind the dart (negative = behind)
-DIHEDRAL = 28.0                              # finale: the opened wings are raised this much above level
+VIEW_ELEV = 52.0                             # finale: camera looks down at the dart by this many degrees
+VIEW_AZ = -4.0                               # finale: camera swung this far behind the dart (negative = behind)
+DIHEDRAL = 44.0                              # finale: the opened wings are raised this much above level
 FINALE_SCALE = 1.10
 
 
