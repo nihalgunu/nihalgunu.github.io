@@ -6,13 +6,18 @@
     <meta name="theme-color" content="#111111">
     <title>nihal gunukula</title>
     <script>
-        // Play the photo intro once per session; skip it for reduced motion.
-        try {
-            if (!matchMedia('(prefers-reduced-motion: reduce)').matches && sessionStorage.getItem('intro-seen') !== '1') {
+        // Play the photo intro once per tab session, only when arriving from outside
+        // the site (never from its own links), and never for reduced motion.
+        (function () {
+            try {
+                var ref = document.referrer && new URL(document.referrer);
+                var fromSite = ref && ref.origin === location.origin;
+                if (!fromSite && !matchMedia('(prefers-reduced-motion: reduce)').matches && sessionStorage.getItem('intro-seen') !== '1') {
+                    document.documentElement.dataset.intro = 'play';
+                }
                 sessionStorage.setItem('intro-seen', '1');
-                document.documentElement.dataset.intro = 'play';
-            }
-        } catch (e) {}
+            } catch (e) {}
+        })();
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,9 +35,7 @@
         <img class="intro-frame" data-src="images/intro/06-eniac.webp" alt="">
         <img class="intro-frame" data-src="images/intro/07-bell-x1.webp" alt="" style="object-position: center 40%">
         <img class="intro-frame" data-src="images/intro/08-apollo11-launch.webp" alt="" style="object-position: center 60%">
-        <img class="intro-frame" data-src="images/intro/09-aldrin.webp" alt="" style="object-position: center 35%">
-        <img class="intro-frame" data-src="images/intro/10-earthrise.webp" alt="" style="object-position: 58% 62%">
-    </div>
+        <img class="intro-frame" data-src="images/intro/09-aldrin.webp" alt="" style="object-position: center 35%">    </div>
 
     <header class="nav-header">
         <div class="container nav-inner">

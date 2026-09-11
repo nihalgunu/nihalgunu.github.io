@@ -1,7 +1,8 @@
 // First-visit photo intro: hard cuts every HOLD_MS, a short hold on the last
 // frame, then the overlay fades out to reveal the page. The inline script in
-// <head> sets html[data-intro="play"] only on the first load in a tab (and never
-// with reduced motion); otherwise the overlay stays hidden.
+// <head> sets html[data-intro="play"] only on the first load in a tab when
+// arriving from outside the site (and never with reduced motion); otherwise
+// the overlay stays hidden.
 (function () {
     var HOLD_MS = 200;
     var FINAL_HOLD_MS = 700;

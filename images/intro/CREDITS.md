@@ -13,4 +13,3 @@ All photos are public domain, sourced from Wikimedia Commons. They were resized 
 | 07-bell-x1.webp | Bell X-1, first to break the sound barrier (1947) | [Commons](https://commons.wikimedia.org/wiki/File:Bell_X-1_46-062_(in_flight).jpg) — NASA |
 | 08-apollo11-launch.webp | Apollo 11 launch (1969) | [Commons](https://commons.wikimedia.org/wiki/File:Apollo_11_Launch_-_GPN-2000-000630.jpg) — NASA |
 | 09-aldrin.webp | Buzz Aldrin on the Moon (1969) | [Commons](https://commons.wikimedia.org/wiki/File:Aldrin_Apollo_11_original.jpg) — NASA / Neil Armstrong |
-| 10-earthrise.webp | Earthrise, Apollo 8 (1968) | [Commons](https://commons.wikimedia.org/wiki/File:NASA-Apollo8-Dec24-Earthrise.jpg) — NASA / Bill Anders |
