@@ -3,8 +3,9 @@
 // photo; fold k plays over the first FOLD_MS of photo k+1's slot, so the
 // model is finished on the last photo. It holds briefly, then the overlay
 // fades out to reveal the page. The inline script in <head> sets
-// html[data-intro="play"] when arriving from outside the site or on a reload
-// (never with reduced motion); following the site's own links plays nothing.
+// html[data-intro="play"] when the page is opened fresh from outside the site
+// or via the nav logo (never with reduced motion); reloads, back/forward and
+// the site's own links play nothing.
 //
 // Fold data (#fold-data, JSON): steps[0] is the flat sheet; steps[k] lists
 // every visible paper layer after fold k as {to, from|null, op}. Layers with
