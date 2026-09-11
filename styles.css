@@ -200,12 +200,17 @@ body {
     inset: 0;
     z-index: 100;
     background: #000;
+    overflow: hidden;
     pointer-events: none;
 }
 
-html[data-intro="play"],
-html[data-intro="play"] body {
-    overflow: hidden;
+/* While it plays the overlay swallows touches so the page underneath can't be
+   scrolled. (Locking overflow on html/body instead left iOS Safari with the
+   page sitting a little scrolled down once the overlay went away.) */
+html[data-intro="play"] .intro {
+    pointer-events: auto;
+    touch-action: none;
+    overscroll-behavior: none;
 }
 
 html[data-intro="play"] .intro,

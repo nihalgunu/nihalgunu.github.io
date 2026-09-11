@@ -31,6 +31,9 @@
         if (finished) return;
         finished = true;
         root.dataset.intro = 'done';
+        // Mobile browsers can leave the page nudged down after a full-screen
+        // overlay; land the reveal at the top.
+        try { window.scrollTo(0, 0); } catch (e) {}
     }
     if (!frames.length || !stage || !steps.length) return finish();
 
