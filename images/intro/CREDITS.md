@@ -4,6 +4,7 @@ All photos are public domain, sourced from Wikimedia Commons. They were resized 
 
 | File | Moment | Source |
 | --- | --- | --- |
+| 00-golden-spike.webp | Golden spike ceremony, Promontory Summit (1869) | [Commons](https://commons.wikimedia.org/wiki/File:East_and_West_Shaking_hands_at_the_laying_of_last_rail_Union_Pacific_Railroad_-_Restoration.jpg) — Andrew J. Russell |
 | 01-harvest.webp | 33-horse combine harvester, Walla Walla, WA (c. 1902) | [Commons](https://commons.wikimedia.org/wiki/File:Evolution_of_sickle_and_flail,_33_horse_team_harvester,_cutting,_threshing_and_sacking_wheat,_Walla_Walla,_Washington,_from_Robert_N._Dennis_collection_of_stereoscopic_views.jpg) — Underwood & Underwood |
 | 02-dreadnought.webp | HMS Dreadnought (1906) | [Commons](https://commons.wikimedia.org/wiki/File:HMS_Dreadnought_1906_H61017.jpg) — Imperial War Museum |
 | 03-endurance.webp | Endurance trapped in Antarctic ice (1915) | [Commons](https://commons.wikimedia.org/wiki/File:Sailing_ship_Endurance_trapped_and_crushed_by_ice_in_the_Antarctic,_1915_(exbt-ice-LongNight).jpg) — Frank Hurley |
