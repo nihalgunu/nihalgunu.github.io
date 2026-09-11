@@ -5,12 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#111111">
     <title>nihal gunukula</title>
+    <script>
+        // Play the photo intro once per session; skip it for reduced motion.
+        try {
+            if (!matchMedia('(prefers-reduced-motion: reduce)').matches && sessionStorage.getItem('intro-seen') !== '1') {
+                sessionStorage.setItem('intro-seen', '1');
+                document.documentElement.dataset.intro = 'play';
+            }
+        } catch (e) {}
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="intro.js" defer></script>
 </head>
 <body>
+    <div class="intro" aria-hidden="true">
+        <img class="intro-frame" data-src="images/intro/01-harvest.webp" alt="">
+        <img class="intro-frame" data-src="images/intro/02-dreadnought.webp" alt="" style="object-position: center 55%">
+        <img class="intro-frame" data-src="images/intro/03-endurance.webp" alt="" style="object-position: center 55%">
+        <img class="intro-frame" data-src="images/intro/04-wright-flyer.webp" alt="" style="object-position: center 45%">
+        <img class="intro-frame" data-src="images/intro/05-ford-line.webp" alt="">
+        <img class="intro-frame" data-src="images/intro/06-eniac.webp" alt="">
+        <img class="intro-frame" data-src="images/intro/07-bell-x1.webp" alt="" style="object-position: center 40%">
+        <img class="intro-frame" data-src="images/intro/08-apollo11-launch.webp" alt="" style="object-position: center 60%">
+        <img class="intro-frame" data-src="images/intro/09-aldrin.webp" alt="" style="object-position: center 35%">
+        <img class="intro-frame" data-src="images/intro/10-earthrise.webp" alt="" style="object-position: 58% 62%">
+    </div>
+
     <header class="nav-header">
         <div class="container nav-inner">
             <a href="index.html" class="nav-brand">nihal gunukula</a>
