@@ -20,6 +20,7 @@
     var root = document.documentElement;
     if (root.dataset.intro !== 'play') return;
 
+    var overlay = document.querySelector('.intro');
     var frames = Array.prototype.slice.call(document.querySelectorAll('.intro-frame'));
     var stage = document.querySelector('.intro-mark .fold-stage');
     var dataEl = document.getElementById('fold-data');
@@ -31,20 +32,20 @@
         if (finished) return;
         finished = true;
         root.dataset.intro = 'done';
-        // Mobile browsers can leave the page nudged down after a full-screen
-        // overlay; land the reveal at the top, again once the overlay has
-        // finished fading (iOS settles its viewport late).
-        var toTop = function () {
+        // Take the overlay out of the page once it has faded. A full-screen
+        // fixed element that stays in the layout keeps iOS Safari in its
+        // collapsed-toolbar state, which leaves the page sitting shifted down
+        // by the toolbar height until you scroll.
+        var drop = function () {
+            if (overlay && overlay.parentNode) overlay.parentNode.removeChild(overlay);
             try {
                 root.style.scrollBehavior = 'auto';
                 window.scrollTo(0, 0);
                 root.style.scrollBehavior = '';
             } catch (e) {}
         };
-        toTop();
-        var overlay = document.querySelector('.intro');
-        if (overlay) overlay.addEventListener('animationend', toTop, { once: true });
-        setTimeout(toTop, 700);
+        if (overlay) overlay.addEventListener('animationend', drop, { once: true });
+        setTimeout(drop, 700);
     }
     if (!frames.length || !stage || !steps.length) return finish();
 
