@@ -277,6 +277,10 @@ html[data-intro="done"] .intro {
     background-color: color-mix(in srgb, var(--text) 5%, transparent);
 }
 
+.index-link--static:hover {
+    background-color: transparent;
+}
+
 .index-link:focus-visible {
     outline: 2px solid var(--text-muted);
     outline-offset: 2px;
